@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hack-A-Sat 2 Quals Data Dump</title>
+<link href='statdump.css' media='all' rel='stylesheet'>
+<meta charset='utf-8'>
+</head>
+<body>
+<div id='content'>
+<nav>
+<ul>
+<li>
+<a href='../challenges.html'>All Challenges</a>
+</li>
+<li>
+<a href='../index.html'>Statdump Root</a>
+</li>
+</ul>
+</nav>
+<h1>Bit Flipper</h1>
+<p>
+We're On the Same Wavelength
+</p>
+<p><p>mom said it's my turn flipping bits in the thermal protection system</p>
+
+<p>dad says don't touch the thermostat</p>
+</p>
+<h1>Solution Statistics</h1>
+<table>
+<tbody>
+<tr>
+<th>observations</th>
+<td>422</td>
+</tr>
+<tr>
+<th>solves</th>
+<td>130</td>
+</tr>
+<tr>
+<th>points</th>
+<td>36</td>
+</tr>
+<tr>
+<th>average solve seconds</th>
+<td>
+20542
+seconds, or
+about 6 hours
+</td>
+</tr>
+<tr>
+<th>stddev solve time</th>
+<td>
+21605
+seconds, or
+about 6 hours
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions Over Time</h2>
+<table>
+<thead>
+<tr>
+<th>by time</th>
+<th>solve count</th>
+<th>solve percent</th>
+</tr>
+</thead>
+<tbody></tbody>
+<tr>
+<td>2021-06-26 15:00:00 UTC</td>
+<td>12</td>
+<td>9%</td>
+</tr>
+<tr>
+<td>2021-06-26 16:00:00 UTC</td>
+<td>33</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>2021-06-26 17:00:00 UTC</td>
+<td>47</td>
+<td>36%</td>
+</tr>
+<tr>
+<td>2021-06-26 18:00:00 UTC</td>
+<td>55</td>
+<td>42%</td>
+</tr>
+<tr>
+<td>2021-06-26 19:00:00 UTC</td>
+<td>62</td>
+<td>47%</td>
+</tr>
+<tr>
+<td>2021-06-26 20:00:00 UTC</td>
+<td>66</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>2021-06-26 21:00:00 UTC</td>
+<td>73</td>
+<td>56%</td>
+</tr>
+<tr>
+<td>2021-06-26 22:00:00 UTC</td>
+<td>81</td>
+<td>62%</td>
+</tr>
+<tr>
+<td>2021-06-26 23:00:00 UTC</td>
+<td>86</td>
+<td>66%</td>
+</tr>
+<tr>
+<td>2021-06-27 00:00:00 UTC</td>
+<td>92</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>2021-06-27 01:00:00 UTC</td>
+<td>93</td>
+<td>71%</td>
+</tr>
+<tr>
+<td>2021-06-27 02:00:00 UTC</td>
+<td>98</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>2021-06-27 03:00:00 UTC</td>
+<td>104</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>2021-06-27 04:00:00 UTC</td>
+<td>105</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>2021-06-27 05:00:00 UTC</td>
+<td>107</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>2021-06-27 06:00:00 UTC</td>
+<td>110</td>
+<td>84%</td>
+</tr>
+<tr>
+<td>2021-06-27 07:00:00 UTC</td>
+<td>114</td>
+<td>87%</td>
+</tr>
+<tr>
+<td>2021-06-27 08:00:00 UTC</td>
+<td>115</td>
+<td>88%</td>
+</tr>
+<tr>
+<td>2021-06-27 09:00:00 UTC</td>
+<td>116</td>
+<td>89%</td>
+</tr>
+<tr>
+<td>2021-06-27 10:00:00 UTC</td>
+<td>117</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>2021-06-27 11:00:00 UTC</td>
+<td>118</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>2021-06-27 12:00:00 UTC</td>
+<td>118</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>2021-06-27 13:00:00 UTC</td>
+<td>118</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>2021-06-27 14:00:00 UTC</td>
+<td>121</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>2021-06-27 15:00:00 UTC</td>
+<td>122</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>2021-06-27 16:00:00 UTC</td>
+<td>122</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>2021-06-27 17:00:00 UTC</td>
+<td>124</td>
+<td>95%</td>
+</tr>
+<tr>
+<td>2021-06-27 18:00:00 UTC</td>
+<td>125</td>
+<td>96%</td>
+</tr>
+<tr>
+<td>2021-06-27 19:00:00 UTC</td>
+<td>128</td>
+<td>98%</td>
+</tr>
+<tr>
+<td>2021-06-27 20:00:00 UTC</td>
+<td>130</td>
+<td>100%</td>
+</tr>
+</table>
+<h2>solving teams:</h2>
+<p>solved by 130 teams</p>
+<table>
+<thead>
+<tr>
+<th>team</th>
+<th>solved at</th>
+<th>it took</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<a href='../teams/373.html'>Les Pl@tistes</a>
+</th>
+<td>
+2021-06-26 14:37:31 UTC
+</td>
+<td>
+1874
+seconds, or
+0.52
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/694.html'>HumbleDog</a>
+</th>
+<td>
+2021-06-26 14:39:40 UTC
+</td>
+<td>
+1396
+seconds, or
+0.39
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/38.html'>DiceGang</a>
+</th>
+<td>
+2021-06-26 14:39:43 UTC
+</td>
+<td>
+2057
+seconds, or
+0.57
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/493.html'>Black Bauhinia</a>
+</th>
+<td>
+2021-06-26 14:45:50 UTC
+</td>
+<td>
+2241
+seconds, or
+0.62
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/273.html'>Singular Mongoose</a>
+</th>
+<td>
+2021-06-26 14:46:51 UTC
+</td>
+<td>
+1073
+seconds, or
+0.3
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/91.html'>Peoples Satellite Libation Venture</a>
+</th>
+<td>
+2021-06-26 14:47:02 UTC
+</td>
+<td>
+2344
+seconds, or
+0.65
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/87.html'>WeltALLES!</a>
+</th>
+<td>
+2021-06-26 14:47:49 UTC
+</td>
+<td>
+2231
+seconds, or
+0.62
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/48.html'>NSL</a>
+</th>
+<td>
+2021-06-26 14:54:52 UTC
+</td>
+<td>
+2979
+seconds, or
+0.83
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/120.html'>OneSmallHackForMan</a>
+</th>
+<td>
+2021-06-26 14:58:00 UTC
+</td>
+<td>
+3035
+seconds, or
+0.84
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/311.html'>mhackeroni</a>
+</th>
+<td>
+2021-06-26 14:58:14 UTC
+</td>
+<td>
+2666
+seconds, or
+0.74
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/749.html'>WreckTheLine</a>
+</th>
+<td>
+2021-06-26 14:58:32 UTC
+</td>
+<td>
+3064
+seconds, or
+0.85
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/778.html'>thethethethe</a>
+</th>
+<td>
+2021-06-26 14:58:53 UTC
+</td>
+<td>
+3201
+seconds, or
+0.89
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/66.html'>perfect blue</a>
+</th>
+<td>
+2021-06-26 15:01:35 UTC
+</td>
+<td>
+3351
+seconds, or
+0.93
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/507.html'>FluxRepeatRocket</a>
+</th>
+<td>
+2021-06-26 15:01:37 UTC
+</td>
+<td>
+3391
+seconds, or
+0.94
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/320.html'>Tea MSG</a>
+</th>
+<td>
+2021-06-26 15:03:36 UTC
+</td>
+<td>
+3473
+seconds, or
+0.96
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/357.html'>LIT</a>
+</th>
+<td>
+2021-06-26 15:07:57 UTC
+</td>
+<td>
+3270
+seconds, or
+0.91
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/580.html'>PLUS</a>
+</th>
+<td>
+2021-06-26 15:08:03 UTC
+</td>
+<td>
+3396
+seconds, or
+0.94
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/61.html'>Poland Can Into Space</a>
+</th>
+<td>
+2021-06-26 15:09:07 UTC
+</td>
+<td>
+3789
+seconds, or
+1.05
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/42.html'>Samurai</a>
+</th>
+<td>
+2021-06-26 15:14:17 UTC
+</td>
+<td>
+3992
+seconds, or
+1.11
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/486.html'>ENOFLAG</a>
+</th>
+<td>
+2021-06-26 15:14:58 UTC
+</td>
+<td>
+4127
+seconds, or
+1.15
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/69.html'>PPP</a>
+</th>
+<td>
+2021-06-26 15:15:49 UTC
+</td>
+<td>
+4032
+seconds, or
+1.12
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/753.html'>efiens</a>
+</th>
+<td>
+2021-06-26 15:15:51 UTC
+</td>
+<td>
+1872
+seconds, or
+0.52
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/427.html'>Knightsec</a>
+</th>
+<td>
+2021-06-26 15:17:56 UTC
+</td>
+<td>
+3597
+seconds, or
+1.0
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/138.html'>Solar Wine</a>
+</th>
+<td>
+2021-06-26 15:20:10 UTC
+</td>
+<td>
+4459
+seconds, or
+1.24
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/77.html'>SingleEventUpset</a>
+</th>
+<td>
+2021-06-26 15:21:15 UTC
+</td>
+<td>
+4455
+seconds, or
+1.24
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/860.html'>We NuBs</a>
+</th>
+<td>
+2021-06-26 15:22:02 UTC
+</td>
+<td>
+1132
+seconds, or
+0.31
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/517.html'>KIRBY</a>
+</th>
+<td>
+2021-06-26 15:22:24 UTC
+</td>
+<td>
+4047
+seconds, or
+1.12
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/425.html'>1t&#39;5_n0t_fla9</a>
+</th>
+<td>
+2021-06-26 15:26:37 UTC
+</td>
+<td>
+4244
+seconds, or
+1.18
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/363.html'>Buckeye Bureau of BOF</a>
+</th>
+<td>
+2021-06-26 15:37:06 UTC
+</td>
+<td>
+5032
+seconds, or
+1.4
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/259.html'>Practicing for Skynet</a>
+</th>
+<td>
+2021-06-26 15:47:15 UTC
+</td>
+<td>
+5757
+seconds, or
+1.6
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/43.html'>ADDVulcan</a>
+</th>
+<td>
+2021-06-26 15:51:02 UTC
+</td>
+<td>
+6309
+seconds, or
+1.75
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/164.html'>Johns Hackins</a>
+</th>
+<td>
+2021-06-26 15:53:22 UTC
+</td>
+<td>
+6212
+seconds, or
+1.73
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/196.html'>Katzebin</a>
+</th>
+<td>
+2021-06-26 15:58:19 UTC
+</td>
+<td>
+6567
+seconds, or
+1.82
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/393.html'>BLÅHAJ</a>
+</th>
+<td>
+2021-06-26 16:05:59 UTC
+</td>
+<td>
+7221
+seconds, or
+2.01
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/712.html'>P&amp;K</a>
+</th>
+<td>
+2021-06-26 16:09:01 UTC
+</td>
+<td>
+7337
+seconds, or
+2.04
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/805.html'>/bad</a>
+</th>
+<td>
+2021-06-26 16:12:37 UTC
+</td>
+<td>
+6447
+seconds, or
+1.79
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/245.html'>Tenacious D</a>
+</th>
+<td>
+2021-06-26 16:17:09 UTC
+</td>
+<td>
+7787
+seconds, or
+2.16
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/345.html'>SpaceBlender</a>
+</th>
+<td>
+2021-06-26 16:19:25 UTC
+</td>
+<td>
+6567
+seconds, or
+1.82
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/133.html'>Cyber_Janitorial</a>
+</th>
+<td>
+2021-06-26 16:27:36 UTC
+</td>
+<td>
+8099
+seconds, or
+2.25
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/55.html'>hazm@tdc</a>
+</th>
+<td>
+2021-06-26 16:30:26 UTC
+</td>
+<td>
+5591
+seconds, or
+1.55
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/210.html'>Cyber_Kahu</a>
+</th>
+<td>
+2021-06-26 16:31:38 UTC
+</td>
+<td>
+6093
+seconds, or
+1.69
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/633.html'>1064CBread</a>
+</th>
+<td>
+2021-06-26 16:33:19 UTC
+</td>
+<td>
+8777
+seconds, or
+2.44
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/219.html'>ROP_Lobsters</a>
+</th>
+<td>
+2021-06-26 16:38:30 UTC
+</td>
+<td>
+7721
+seconds, or
+2.14
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/53.html'>Illuminopi</a>
+</th>
+<td>
+2021-06-26 16:38:51 UTC
+</td>
+<td>
+8258
+seconds, or
+2.29
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/384.html'>Skynet Assassins</a>
+</th>
+<td>
+2021-06-26 16:47:50 UTC
+</td>
+<td>
+4786
+seconds, or
+1.33
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/167.html'>NAND Sanitizer</a>
+</th>
+<td>
+2021-06-26 16:53:38 UTC
+</td>
+<td>
+9316
+seconds, or
+2.59
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/211.html'>WeightedCompanionCube</a>
+</th>
+<td>
+2021-06-26 16:56:07 UTC
+</td>
+<td>
+8622
+seconds, or
+2.39
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/95.html'>Visions_of_Grandeur</a>
+</th>
+<td>
+2021-06-26 17:19:25 UTC
+</td>
+<td>
+11623
+seconds, or
+3.23
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/271.html'>Batman&#39;s Kitchen</a>
+</th>
+<td>
+2021-06-26 17:22:58 UTC
+</td>
+<td>
+9880
+seconds, or
+2.74
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/175.html'>Watson&#39;s_Legacy</a>
+</th>
+<td>
+2021-06-26 17:26:30 UTC
+</td>
+<td>
+11507
+seconds, or
+3.2
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/214.html'>SpaceBitsRUs</a>
+</th>
+<td>
+2021-06-26 17:34:09 UTC
+</td>
+<td>
+12290
+seconds, or
+3.41
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/168.html'>The Additional Payphones</a>
+</th>
+<td>
+2021-06-26 17:45:18 UTC
+</td>
+<td>
+9475
+seconds, or
+2.63
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/198.html'>LEO Enforcement Officers</a>
+</th>
+<td>
+2021-06-26 17:49:31 UTC
+</td>
+<td>
+13345
+seconds, or
+3.71
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/174.html'>Irrelevant Noobs</a>
+</th>
+<td>
+2021-06-26 17:53:05 UTC
+</td>
+<td>
+12651
+seconds, or
+3.51
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/396.html'>AFdoesIT</a>
+</th>
+<td>
+2021-06-26 17:56:35 UTC
+</td>
+<td>
+10819
+seconds, or
+3.01
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/513.html'>parag0n</a>
+</th>
+<td>
+2021-06-26 18:00:02 UTC
+</td>
+<td>
+9138
+seconds, or
+2.54
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/170.html'>Delta-v</a>
+</th>
+<td>
+2021-06-26 18:23:17 UTC
+</td>
+<td>
+15025
+seconds, or
+4.17
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/375.html'>ToTheMoon</a>
+</th>
+<td>
+2021-06-26 18:23:22 UTC
+</td>
+<td>
+14964
+seconds, or
+4.16
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/205.html'>UntamedFriesians</a>
+</th>
+<td>
+2021-06-26 18:25:25 UTC
+</td>
+<td>
+12416
+seconds, or
+3.45
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/350.html'>BoozingAltitude</a>
+</th>
+<td>
+2021-06-26 18:29:51 UTC
+</td>
+<td>
+15789
+seconds, or
+4.39
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/179.html'>The Ws</a>
+</th>
+<td>
+2021-06-26 18:46:40 UTC
+</td>
+<td>
+7459
+seconds, or
+2.07
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/107.html'>elysium</a>
+</th>
+<td>
+2021-06-26 18:51:24 UTC
+</td>
+<td>
+11014
+seconds, or
+3.06
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/126.html'>ArcReactor</a>
+</th>
+<td>
+2021-06-26 19:05:10 UTC
+</td>
+<td>
+17543
+seconds, or
+4.87
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/85.html'>PFS</a>
+</th>
+<td>
+2021-06-26 19:12:22 UTC
+</td>
+<td>
+16406
+seconds, or
+4.56
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/557.html'>Blasteroids</a>
+</th>
+<td>
+2021-06-26 19:16:24 UTC
+</td>
+<td>
+18284
+seconds, or
+5.08
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/553.html'>UQCyberSquad</a>
+</th>
+<td>
+2021-06-26 19:53:42 UTC
+</td>
+<td>
+19542
+seconds, or
+5.43
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/272.html'>vMag</a>
+</th>
+<td>
+2021-06-26 20:05:20 UTC
+</td>
+<td>
+21601
+seconds, or
+6.0
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/197.html'>FoodComa</a>
+</th>
+<td>
+2021-06-26 20:12:03 UTC
+</td>
+<td>
+21142
+seconds, or
+5.87
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/697.html'>Gravity Well</a>
+</th>
+<td>
+2021-06-26 20:14:47 UTC
+</td>
+<td>
+21887
+seconds, or
+6.08
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/154.html'>ACMEPharm</a>
+</th>
+<td>
+2021-06-26 20:31:16 UTC
+</td>
+<td>
+11423
+seconds, or
+3.17
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/527.html'>fuzzynoobs</a>
+</th>
+<td>
+2021-06-26 20:47:23 UTC
+</td>
+<td>
+18171
+seconds, or
+5.05
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/668.html'>idek</a>
+</th>
+<td>
+2021-06-26 20:49:14 UTC
+</td>
+<td>
+10601
+seconds, or
+2.94
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/667.html'>redpwn2.0</a>
+</th>
+<td>
+2021-06-26 20:50:53 UTC
+</td>
+<td>
+21773
+seconds, or
+6.05
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/344.html'>frimware</a>
+</th>
+<td>
+2021-06-26 21:08:25 UTC
+</td>
+<td>
+2601
+seconds, or
+0.72
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/225.html'>lowprivshighorbits</a>
+</th>
+<td>
+2021-06-26 21:19:39 UTC
+</td>
+<td>
+22344
+seconds, or
+6.21
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/258.html'>PixeledPizza</a>
+</th>
+<td>
+2021-06-26 21:29:54 UTC
+</td>
+<td>
+22677
+seconds, or
+6.3
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/63.html'>📡🐺🔥🔥🔥</a>
+</th>
+<td>
+2021-06-26 21:30:42 UTC
+</td>
+<td>
+26619
+seconds, or
+7.39
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/809.html'>KXTI_tgb</a>
+</th>
+<td>
+2021-06-26 21:36:25 UTC
+</td>
+<td>
+25348
+seconds, or
+7.04
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/160.html'>Galactic Star Command</a>
+</th>
+<td>
+2021-06-26 21:37:45 UTC
+</td>
+<td>
+27028
+seconds, or
+7.51
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/309.html'>segfault_in_our_stars</a>
+</th>
+<td>
+2021-06-26 21:37:57 UTC
+</td>
+<td>
+27017
+seconds, or
+7.5
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/60.html'>SODIUM-24</a>
+</th>
+<td>
+2021-06-26 21:42:50 UTC
+</td>
+<td>
+25343
+seconds, or
+7.04
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/342.html'>Tcache Money</a>
+</th>
+<td>
+2021-06-26 22:22:09 UTC
+</td>
+<td>
+28213
+seconds, or
+7.84
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/656.html'>ARESx</a>
+</th>
+<td>
+2021-06-26 22:33:22 UTC
+</td>
+<td>
+30013
+seconds, or
+8.34
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/82.html'>SpaceForce-RedShirts</a>
+</th>
+<td>
+2021-06-26 22:38:11 UTC
+</td>
+<td>
+24693
+seconds, or
+6.86
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/355.html'>solid-umbrella</a>
+</th>
+<td>
+2021-06-26 22:57:41 UTC
+</td>
+<td>
+31169
+seconds, or
+8.66
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/44.html'>5C0U7</a>
+</th>
+<td>
+2021-06-26 22:58:05 UTC
+</td>
+<td>
+30416
+seconds, or
+8.45
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/93.html'>STRship Troopers</a>
+</th>
+<td>
+2021-06-26 23:03:08 UTC
+</td>
+<td>
+31070
+seconds, or
+8.63
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/224.html'>aslrulz</a>
+</th>
+<td>
+2021-06-26 23:12:28 UTC
+</td>
+<td>
+31622
+seconds, or
+8.78
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/333.html'>Flat Earth Society - Jovian Chapter</a>
+</th>
+<td>
+2021-06-26 23:25:23 UTC
+</td>
+<td>
+32192
+seconds, or
+8.94
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/795.html'>RobHAS</a>
+</th>
+<td>
+2021-06-26 23:27:38 UTC
+</td>
+<td>
+14926
+seconds, or
+4.15
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/651.html'>Friendly Hacks</a>
+</th>
+<td>
+2021-06-26 23:44:13 UTC
+</td>
+<td>
+32190
+seconds, or
+8.94
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/675.html'>hacararra</a>
+</th>
+<td>
+2021-06-26 23:55:59 UTC
+</td>
+<td>
+6489
+seconds, or
+1.8
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/724.html'>greenhorn</a>
+</th>
+<td>
+2021-06-27 00:00:21 UTC
+</td>
+<td>
+33975
+seconds, or
+9.44
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/206.html'>BandOfBinaries</a>
+</th>
+<td>
+2021-06-27 01:07:17 UTC
+</td>
+<td>
+39313
+seconds, or
+10.92
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/876.html'>Orbit</a>
+</th>
+<td>
+2021-06-27 01:12:02 UTC
+</td>
+<td>
+7011
+seconds, or
+1.95
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/308.html'>oculi spatio</a>
+</th>
+<td>
+2021-06-27 01:13:08 UTC
+</td>
+<td>
+38691
+seconds, or
+10.75
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/215.html'>MyopicTelescope</a>
+</th>
+<td>
+2021-06-27 01:41:24 UTC
+</td>
+<td>
+41548
+seconds, or
+11.54
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/415.html'>CheekiBreeki</a>
+</th>
+<td>
+2021-06-27 01:51:36 UTC
+</td>
+<td>
+40569
+seconds, or
+11.27
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/736.html'>mslc</a>
+</th>
+<td>
+2021-06-27 02:19:45 UTC
+</td>
+<td>
+43723
+seconds, or
+12.15
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/394.html'>TeamC8</a>
+</th>
+<td>
+2021-06-27 02:24:37 UTC
+</td>
+<td>
+42501
+seconds, or
+11.81
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/981.html'>berninator</a>
+</th>
+<td>
+2021-06-27 02:31:52 UTC
+</td>
+<td>
+11585
+seconds, or
+3.22
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/34.html'>CTF_Circle</a>
+</th>
+<td>
+2021-06-27 02:45:33 UTC
+</td>
+<td>
+42386
+seconds, or
+11.77
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/56.html'>vaporsec</a>
+</th>
+<td>
+2021-06-27 02:53:34 UTC
+</td>
+<td>
+42233
+seconds, or
+11.73
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/52.html'>Vim Appreciation Society</a>
+</th>
+<td>
+2021-06-27 02:53:53 UTC
+</td>
+<td>
+46099
+seconds, or
+12.81
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/403.html'>UCSD</a>
+</th>
+<td>
+2021-06-27 03:28:25 UTC
+</td>
+<td>
+46238
+seconds, or
+12.84
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/458.html'>cspl2021</a>
+</th>
+<td>
+2021-06-27 04:28:00 UTC
+</td>
+<td>
+38180
+seconds, or
+10.61
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/609.html'>sarma</a>
+</th>
+<td>
+2021-06-27 04:33:48 UTC
+</td>
+<td>
+23749
+seconds, or
+6.6
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/997.html'>n00b</a>
+</th>
+<td>
+2021-06-27 05:01:13 UTC
+</td>
+<td>
+12255
+seconds, or
+3.4
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/434.html'>UMDCSEC</a>
+</th>
+<td>
+2021-06-27 05:03:03 UTC
+</td>
+<td>
+35183
+seconds, or
+9.77
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/734.html'>uetctf</a>
+</th>
+<td>
+2021-06-27 05:18:03 UTC
+</td>
+<td>
+51921
+seconds, or
+14.42
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/249.html'>Applicative</a>
+</th>
+<td>
+2021-06-27 06:13:02 UTC
+</td>
+<td>
+53840
+seconds, or
+14.96
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/391.html'>Dynamite Spastic Labradors</a>
+</th>
+<td>
+2021-06-27 06:35:46 UTC
+</td>
+<td>
+58415
+seconds, or
+16.23
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1041.html'>w1ldc4t</a>
+</th>
+<td>
+2021-06-27 06:39:46 UTC
+</td>
+<td>
+42
+seconds, or
+0.01
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/231.html'>PatanjaliHax</a>
+</th>
+<td>
+2021-06-27 06:57:34 UTC
+</td>
+<td>
+59424
+seconds, or
+16.51
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/152.html'>HitchHackersGuideToTheSatellite</a>
+</th>
+<td>
+2021-06-27 07:17:50 UTC
+</td>
+<td>
+8174
+seconds, or
+2.27
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/495.html'>b01lers</a>
+</th>
+<td>
+2021-06-27 08:56:13 UTC
+</td>
+<td>
+52353
+seconds, or
+14.54
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/316.html'>h4tum</a>
+</th>
+<td>
+2021-06-27 09:18:50 UTC
+</td>
+<td>
+66928
+seconds, or
+18.59
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/857.html'>ThoseWhoFailedTheOnOrbitChallenge</a>
+</th>
+<td>
+2021-06-27 10:23:55 UTC
+</td>
+<td>
+36875
+seconds, or
+10.24
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1045.html'>Shoshi</a>
+</th>
+<td>
+2021-06-27 13:27:20 UTC
+</td>
+<td>
+15395
+seconds, or
+4.28
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/948.html'>Federation</a>
+</th>
+<td>
+2021-06-27 13:29:03 UTC
+</td>
+<td>
+55852
+seconds, or
+15.51
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/540.html'>Wgpsec</a>
+</th>
+<td>
+2021-06-27 13:57:38 UTC
+</td>
+<td>
+81805
+seconds, or
+22.72
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/284.html'>shonan-space</a>
+</th>
+<td>
+2021-06-27 14:24:26 UTC
+</td>
+<td>
+3158
+seconds, or
+0.88
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1084.html'>Chanterelle</a>
+</th>
+<td>
+2021-06-27 16:03:10 UTC
+</td>
+<td>
+2203
+seconds, or
+0.61
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/399.html'>Doki Doki Hacking Club</a>
+</th>
+<td>
+2021-06-27 16:06:18 UTC
+</td>
+<td>
+92065
+seconds, or
+25.57
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/871.html'>team_treclim</a>
+</th>
+<td>
+2021-06-27 17:38:05 UTC
+</td>
+<td>
+10325
+seconds, or
+2.87
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/986.html'>Roller</a>
+</th>
+<td>
+2021-06-27 18:06:17 UTC
+</td>
+<td>
+57966
+seconds, or
+16.1
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/518.html'>Blackjackets</a>
+</th>
+<td>
+2021-06-27 18:16:21 UTC
+</td>
+<td>
+97348
+seconds, or
+27.04
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/327.html'>The Braintrust</a>
+</th>
+<td>
+2021-06-27 18:37:38 UTC
+</td>
+<td>
+100951
+seconds, or
+28.04
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/213.html'>ELT</a>
+</th>
+<td>
+2021-06-27 19:48:07 UTC
+</td>
+<td>
+20537
+seconds, or
+5.7
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/341.html'>HackPack</a>
+</th>
+<td>
+2021-06-27 19:54:39 UTC
+</td>
+<td>
+94563
+seconds, or
+26.27
+hours
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>

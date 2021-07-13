@@ -1,0 +1,345 @@
+html, body {
+  background-color: #00040a;
+  color: white; }
+
+a:link, a:visited, a:hover, a:active {
+  color: #00e6ff; }
+
+a:hover {
+  color: #b0d126; }
+
+header {
+  background: linear-gradient(to right, #00e6ff, #ffc100) #00e6ff;
+  color: black; }
+
+section #content div.content, section #flashes div.content {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+footer {
+  color: black;
+  background: linear-gradient(to bottom, #ffc100, #00e6ff); }
+
+strong {
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: local("Fantasque Sans Mono"), url(asset-path("FantasqueSansMono-Regular.woff2")) format("woff2"); }
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: local("Fantasque Sans Mono Bold"), url(asset-path("FantasqueSansMono-Bold.woff2")) format("woff2");
+  font-weight: bold; }
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: local("Fantasque Sans Mono Italic"), url(asset-path("FantasqueSansMono-Italic.woff2")) format("woff2");
+  font-style: italic; }
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: local("Fantasque Sans Mono Bold Italic"), url(asset-path("FantasqueSansMono-BoldItalic.woff2")) format("woff2");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Black"), url(asset-path("Montserrat-Black.woff2")) format("woff2");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Black Italic"), url(asset-path("Montserrat-BlackItalic.woff2")) format("woff2");
+  font-weight: 900;
+  font-style: italic; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"), url(asset-path("Montserrat-Bold.woff2")) format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold Italic"), url(asset-path("Montserrat-BoldItalic.woff2")) format("woff2");
+  font-weight: 700;
+  font-style: italic; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat ExtraBold"), url(asset-path("Montserrat-ExtraBold.woff2")) format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat ExtraBold Italic"), url(asset-path("Montserrat-ExtraBoldItalic.woff2")) format("woff2");
+  font-weight: 800;
+  font-style: italic; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat ExtraLight"), url(asset-path("Montserrat-ExtraLight.woff2")) format("woff2");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat ExtraLight Italic"), url(asset-path("Montserrat-ExtraLightItalic.woff2")) format("woff2");
+  font-weight: 200;
+  font-style: italic; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Italic"), url(asset-path("Montserrat-Italic.woff2")) format("woff2");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Light"), url(asset-path("Montserrat-Light.woff2")) format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat LightItalic"), url(asset-path("Montserrat-LightItalic.woff2")) format("woff2");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium"), url(asset-path("Montserrat-Medium.woff2")) format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium Italic"), url(asset-path("Montserrat-MediumItalic.woff2")) format("woff2");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), url(asset-path("Montserrat-Regular.woff2")) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat SemiBold"), url(asset-path("Montserrat-SemiBold.woff2")) format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat SemiBold Italic"), url(asset-path("Montserrat-SemiBoldItalic.woff2")) format("woff2");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Thin"), url(asset-path("Montserrat-Thin.woff2")) format("woff2");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Thin Italic"), url(asset-path("Montserrat-ThinItalic.woff2")) format("woff2");
+  font-weight: 100;
+  font-style: italic; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Bold"), url(asset-path("Oswald-Bold.woff2")) format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald BoldItalic"), url(asset-path("Oswald-BoldItalic.woff2")) format("woff2");
+  font-weight: 700;
+  font-style: italic; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Demi-BoldItalic"), url(asset-path("Oswald-Demi-BoldItalic.woff2")) format("woff2");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald DemiBold"), url(asset-path("Oswald-DemiBold.woff2")) format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Extra-LightItalic"), url(asset-path("Oswald-Extra-LightItalic.woff2")) format("woff2");
+  font-weight: 200;
+  font-style: italic; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald ExtraLight"), url(asset-path("Oswald-ExtraLight.woff2")) format("woff2");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Heavy"), url(asset-path("Oswald-Heavy.woff2")) format("woff2");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald HeavyItalic"), url(asset-path("Oswald-HeavyItalic.woff2")) format("woff2");
+  font-weight: 900;
+  font-style: italic; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Light"), url(asset-path("Oswald-Light.woff2")) format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald LightItalic"), url(asset-path("Oswald-LightItalic.woff2")) format("woff2");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Medium"), url(asset-path("Oswald-Medium.woff2")) format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald MediumItalic"), url(asset-path("Oswald-MediumItalic.woff2")) format("woff2");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Regular"), url(asset-path("Oswald-Regular.woff2")) format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald RegularItalic"), url(asset-path("Oswald-RegularItalic.woff2")) format("woff2");
+  font-weight: 400;
+  font-style: italic; }
+tt, fixed, pre, code {
+  font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier; }
+
+html, body, input[type='submit'], button {
+  font-family: Montserrat, Helvetica, Arial; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, Helvetica, Arial;
+  font-weight: 900; }
+
+.advisory, .advisory th {
+  font-weight: 200;
+  font-size: 0.9em; }
+  @media screen and (min-width: 80rem) {
+    .advisory, .advisory th {
+      font-weight: 100;
+      font-size: 0.8em; } }
+
+a.btn[type='submit'], a.btn:link {
+  border: 1px solid #00e6ff;
+  border-radius: 0.25rem;
+  background-color: #00e6ff;
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.1rem; }
+a.btn:visited {
+  color: black;
+  border-color: #00e6ff; }
+a.btn:hover {
+  background-color: #80f3ff; }
+
+.btn.confirm:link {
+  border-color: #b0d126;
+  background-color: #b0d126; }
+.btn.confirm:visited {
+  border-color: #b0d126; }
+.btn.confirm:hover {
+  background-color: #d9eb90; }
+
+.btn.cancel:link {
+  border-color: #ffc100;
+  background-color: #ffc100; }
+.btn.cancel:visited {
+  border-color: #ffc100; }
+.btn.cancel:hover {
+  background-color: #ffe080; }
+
+.btn.question:link {
+  border-color: #a358b6;
+  background-color: #a358b6; }
+.btn.question:visited {
+  border-color: #a358b6; }
+.btn.question:hover {
+  background-color: #d1acdb; }
+
+input[type='submit'][type='submit'], input[type='submit']:link {
+  border: 1px solid #00e6ff;
+  border-radius: 0.25rem;
+  background-color: #00e6ff;
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.1rem; }
+input[type='submit']:visited {
+  color: black;
+  border-color: #00e6ff; }
+input[type='submit']:hover {
+  background-color: #80f3ff; }
+input[type='submit'].confirm {
+  background-color: #b0d126;
+  border-color: #b0d126; }
+  input[type='submit'].confirm:link {
+    border-color: #b0d126;
+    background-color: #b0d126; }
+  input[type='submit'].confirm:visited {
+    border-color: #b0d126; }
+  input[type='submit'].confirm:hover {
+    background-color: #d9eb90; }
+
+button {
+  border: 1px solid #00e6ff;
+  border-radius: 0.25rem;
+  background-color: #00e6ff;
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.1rem; }
+  button[type='submit'], button:link {
+    border: 1px solid #00e6ff;
+    border-radius: 0.25rem;
+    background-color: #00e6ff;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem; }
+  button:visited {
+    color: black;
+    border-color: #00e6ff; }
+  button:hover {
+    background-color: #80f3ff; }
+  button.question {
+    border: 1px solid #a358b6;
+    border-radius: 0.25rem;
+    background-color: #a358b6;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem; }
+
+input.confirm {
+  background-color: #2c340a;
+  border-color: #b0d126; }
+
+body {
+  background-color: black;
+  color: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  background-color: #a358b6; }
+
+h2 {
+  background-color: #00e6ff; }
+
+h3 {
+  background-color: #b0d126; }
+
+nav ul {
+  padding-left: 0; }
+  nav ul li {
+    display: inline-block; }
+    nav ul li a[type='submit'], nav ul li a:link {
+      border: 1px solid #00e6ff;
+      border-radius: 0.25rem;
+      background-color: #00e6ff;
+      color: black;
+      padding: 0.5rem;
+      text-decoration: none;
+      font-size: 1.1rem; }
+    nav ul li a:visited {
+      color: black;
+      border-color: #00e6ff; }
+    nav ul li a:hover {
+      background-color: #80f3ff; }

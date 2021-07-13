@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hack-A-Sat 2 Quals Data Dump</title>
+<link href='statdump.css' media='all' rel='stylesheet'>
+<meta charset='utf-8'>
+</head>
+<body>
+<div id='content'>
+<nav>
+<ul>
+<li>
+<a href='../challenges.html'>All Challenges</a>
+</li>
+<li>
+<a href='../index.html'>Statdump Root</a>
+</li>
+</ul>
+</nav>
+<h1>Saving Spinny</h1>
+<p>
+Guardians of the…
+</p>
+<p><p>We've lost control of our spacecraft, Spinny, and it no longer points its directional antenna at our ground stations. You'll need to account for the spacecraft spin rates, as well as its orbit to upload the correct command sequence from ground stations around the world. In order to stop spinning, you'll need to send the following commands in the correct order:</p>
+
+<pre><code>CMD1: "PLEASE"
+CMD2: "STOP"
+CMD3: "SPINNING!"
+</code></pre>
+
+<p>Due to Spinny's limited radio capabilities, it requires contact windows of at least 3 minutes and can only receive one word at a time. The spacecraft antenna must be pointed within 45 degrees of a ground station to receive. Since you cannot point the spacececraft, you will have to predict when it will be pointed at a ground station based on a known initial pointing vector and constant body spin rates.</p>
+
+<pre><code>Constant spacecraft body spin rate of [0.1,0.1,0.1] deg/s in XYZ
+Initial spacecraft antenna pointing direction of [1,0,0] in the J2000 frame at the TLE epoch (2021-06-26 00:00:00 UTC)
+</code></pre>
+
+<p>Commands are queued at ground stations using the following format:</p>
+
+<pre><code>SYNTAX: YYYY-MM-DD-hh:mm:ss-UTC STATION CMD SAT CMD_WORD
+
+EXAMPLES:
+
+2021-06-26-01:00:00-UTC BANGALOR CMD SPINNY PLEASE
+2021-06-26-02:00:00-UTC GRIMSTAD CMD SPINNY STOP
+2021-06-26-03:00:00-UTC SVALBARD CMD SPINNY SPINNING!
+</code></pre>
+
+<p>Spinny's TLE is:</p>
+
+<pre><code>Spinny
+1 75001F 21750A   21177.00000000  .00000000  00000-0  00000-0 0   51
+2 75001  98.0875 274.0660 0000000   0.0000 359.9920 14.57890000 1100
+</code></pre>
+
+<p>Ground stations are located at (WGS-84):</p>
+
+<table>
+<thead>
+<tr>
+<th> Name </th>
+<th> Latitude (deg) </th>
+<th> Longitude (deg) </th>
+<th> Altitude (m) </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> BANGALOR </td>
+<td> 13.0344 </td>
+<td> 77.5116 </td>
+<td> 823 </td>
+</tr>
+<tr>
+<td> GRIMSTAD </td>
+<td> 58.33 </td>
+<td> 8.35 </td>
+<td> 211 </td>
+</tr>
+<tr>
+<td> SVALBARD </td>
+<td> 78.2307 </td>
+<td> 15.3897 </td>
+<td> 497 </td>
+</tr>
+<tr>
+<td> TROLLSAT </td>
+<td> -72.0117 </td>
+<td> 2.53838 </td>
+<td> 1400 </td>
+</tr>
+<tr>
+<td> TROMSO </td>
+<td> 69.6625 </td>
+<td> 18.9408 </td>
+<td> 134 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Correctly queue commands at the ground stations over 12 hours to rescue Spinny and get the flag.</p>
+</p>
+<h1>Solution Statistics</h1>
+<table>
+<tbody>
+<tr>
+<th>observations</th>
+<td>138</td>
+</tr>
+<tr>
+<th>solves</th>
+<td>23</td>
+</tr>
+<tr>
+<th>points</th>
+<td>146</td>
+</tr>
+<tr>
+<th>average solve seconds</th>
+<td>
+9500
+seconds, or
+about 3 hours
+</td>
+</tr>
+<tr>
+<th>stddev solve time</th>
+<td>
+5361
+seconds, or
+about 1 hour
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions Over Time</h2>
+<table>
+<thead>
+<tr>
+<th>by time</th>
+<th>solve count</th>
+<th>solve percent</th>
+</tr>
+</thead>
+<tbody></tbody>
+<tr>
+<td>2021-06-27 15:00:00 UTC</td>
+<td>1</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>2021-06-27 16:00:00 UTC</td>
+<td>7</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>2021-06-27 17:00:00 UTC</td>
+<td>14</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>2021-06-27 18:00:00 UTC</td>
+<td>16</td>
+<td>69%</td>
+</tr>
+<tr>
+<td>2021-06-27 19:00:00 UTC</td>
+<td>19</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>2021-06-27 20:00:00 UTC</td>
+<td>23</td>
+<td>100%</td>
+</tr>
+</table>
+<h2>solving teams:</h2>
+<p>solved by 23 teams</p>
+<table>
+<thead>
+<tr>
+<th>team</th>
+<th>solved at</th>
+<th>it took</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<a href='../teams/69.html'>PPP</a>
+</th>
+<td>
+2021-06-27 14:31:52 UTC
+</td>
+<td>
+1648
+seconds, or
+0.46
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/38.html'>DiceGang</a>
+</th>
+<td>
+2021-06-27 15:00:43 UTC
+</td>
+<td>
+3191
+seconds, or
+0.89
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/320.html'>Tea MSG</a>
+</th>
+<td>
+2021-06-27 15:48:09 UTC
+</td>
+<td>
+5841
+seconds, or
+1.62
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/95.html'>Visions_of_Grandeur</a>
+</th>
+<td>
+2021-06-27 15:50:31 UTC
+</td>
+<td>
+5358
+seconds, or
+1.49
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/384.html'>Skynet Assassins</a>
+</th>
+<td>
+2021-06-27 15:57:10 UTC
+</td>
+<td>
+6454
+seconds, or
+1.79
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/507.html'>FluxRepeatRocket</a>
+</th>
+<td>
+2021-06-27 15:58:18 UTC
+</td>
+<td>
+6627
+seconds, or
+1.84
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/66.html'>perfect blue</a>
+</th>
+<td>
+2021-06-27 15:59:36 UTC
+</td>
+<td>
+5336
+seconds, or
+1.48
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/43.html'>ADDVulcan</a>
+</th>
+<td>
+2021-06-27 16:19:34 UTC
+</td>
+<td>
+7919
+seconds, or
+2.2
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/61.html'>Poland Can Into Space</a>
+</th>
+<td>
+2021-06-27 16:31:23 UTC
+</td>
+<td>
+8852
+seconds, or
+2.46
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/486.html'>ENOFLAG</a>
+</th>
+<td>
+2021-06-27 16:31:31 UTC
+</td>
+<td>
+7578
+seconds, or
+2.11
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/77.html'>SingleEventUpset</a>
+</th>
+<td>
+2021-06-27 16:31:56 UTC
+</td>
+<td>
+8514
+seconds, or
+2.36
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/120.html'>OneSmallHackForMan</a>
+</th>
+<td>
+2021-06-27 16:33:39 UTC
+</td>
+<td>
+8870
+seconds, or
+2.46
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/48.html'>NSL</a>
+</th>
+<td>
+2021-06-27 16:35:48 UTC
+</td>
+<td>
+7523
+seconds, or
+2.09
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/517.html'>KIRBY</a>
+</th>
+<td>
+2021-06-27 16:54:27 UTC
+</td>
+<td>
+9330
+seconds, or
+2.59
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1084.html'>Chanterelle</a>
+</th>
+<td>
+2021-06-27 17:32:33 UTC
+</td>
+<td>
+233
+seconds, or
+0.06
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/138.html'>Solar Wine</a>
+</th>
+<td>
+2021-06-27 17:39:05 UTC
+</td>
+<td>
+12467
+seconds, or
+3.46
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/633.html'>1064CBread</a>
+</th>
+<td>
+2021-06-27 18:01:32 UTC
+</td>
+<td>
+11849
+seconds, or
+3.29
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/211.html'>WeightedCompanionCube</a>
+</th>
+<td>
+2021-06-27 18:13:17 UTC
+</td>
+<td>
+14503
+seconds, or
+4.03
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/272.html'>vMag</a>
+</th>
+<td>
+2021-06-27 18:23:45 UTC
+</td>
+<td>
+14324
+seconds, or
+3.98
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/205.html'>UntamedFriesians</a>
+</th>
+<td>
+2021-06-27 19:48:17 UTC
+</td>
+<td>
+15510
+seconds, or
+4.31
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/87.html'>WeltALLES!</a>
+</th>
+<td>
+2021-06-27 19:53:29 UTC
+</td>
+<td>
+19605
+seconds, or
+5.45
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/393.html'>BLÅHAJ</a>
+</th>
+<td>
+2021-06-27 19:56:41 UTC
+</td>
+<td>
+20136
+seconds, or
+5.59
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/63.html'>📡🐺🔥🔥🔥</a>
+</th>
+<td>
+2021-06-27 19:59:10 UTC
+</td>
+<td>
+16819
+seconds, or
+4.67
+hours
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hack-A-Sat 2 Quals Data Dump</title>
+<link href='statdump.css' media='all' rel='stylesheet'>
+<meta charset='utf-8'>
+</head>
+<body>
+<div id='content'>
+<nav>
+<ul>
+<li>
+<a href='../challenges.html'>All Challenges</a>
+</li>
+<li>
+<a href='../index.html'>Statdump Root</a>
+</li>
+</ul>
+</nav>
+<h1>Take Out the Trash</h1>
+<p>
+Deck 36, Main Engineering
+</p>
+<p><p>A cloud of space junk is in your constellation's orbital plane. Use the space lasers on your satellites to vaporize it! Destroy at least 51 pieces of space junk to get the flag.</p>
+
+<p>The lasers have a range of 100 km and must be provided range and attitude to lock onto the space junk. Don't allow any space junk to approach closer than 10 km.</p>
+
+<p>Command format:</p>
+
+<p><code>[Time_UTC] [Sat_ID] FIRE [Qx] [Qy] [Qz] [Qw] [Range_km]</code></p>
+
+<p>Command example:</p>
+
+<p><code>2021177.014500 SAT1 FIRE -0.7993071278793108 0.2569145028089314 0.0 0.5432338847750264 47.85760531563315</code></p>
+
+<p>This command fires the laser from Sat1 on June 26, 2021 (day 177 of the year) at 01:45:00 UTC and expects the target to be approximately 48 km away. The direction would be a [0,0,1] vector in the J2000 frame rotated by the provided quaternion [-0.7993071278793108 0.2569145028089314 0.0 0.5432338847750264] in the form [Qx Qy Qz Qw].</p>
+
+<p>One successful laser command is provided for you (note: there are many possible combinations of time, attitude, range, and spacecraft to destroy the same piece of space junk):</p>
+
+<p><code>2021177.002200 SAT1 FIRE -0.6254112512084177 -0.10281341941423379 0.0 0.773492189779751 84.9530354564239</code></p>
+</p>
+<h1>Solution Statistics</h1>
+<table>
+<tbody>
+<tr>
+<th>observations</th>
+<td>160</td>
+</tr>
+<tr>
+<th>solves</th>
+<td>24</td>
+</tr>
+<tr>
+<th>points</th>
+<td>142</td>
+</tr>
+<tr>
+<th>average solve seconds</th>
+<td>
+24489
+seconds, or
+about 7 hours
+</td>
+</tr>
+<tr>
+<th>stddev solve time</th>
+<td>
+14488
+seconds, or
+about 4 hours
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions Over Time</h2>
+<table>
+<thead>
+<tr>
+<th>by time</th>
+<th>solve count</th>
+<th>solve percent</th>
+</tr>
+</thead>
+<tbody></tbody>
+<tr>
+<td>2021-06-27 07:00:00 UTC</td>
+<td>1</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>2021-06-27 08:00:00 UTC</td>
+<td>1</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>2021-06-27 09:00:00 UTC</td>
+<td>5</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>2021-06-27 10:00:00 UTC</td>
+<td>6</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>2021-06-27 11:00:00 UTC</td>
+<td>9</td>
+<td>37%</td>
+</tr>
+<tr>
+<td>2021-06-27 12:00:00 UTC</td>
+<td>9</td>
+<td>37%</td>
+</tr>
+<tr>
+<td>2021-06-27 13:00:00 UTC</td>
+<td>11</td>
+<td>45%</td>
+</tr>
+<tr>
+<td>2021-06-27 14:00:00 UTC</td>
+<td>12</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>2021-06-27 15:00:00 UTC</td>
+<td>13</td>
+<td>54%</td>
+</tr>
+<tr>
+<td>2021-06-27 16:00:00 UTC</td>
+<td>18</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>2021-06-27 17:00:00 UTC</td>
+<td>18</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>2021-06-27 18:00:00 UTC</td>
+<td>21</td>
+<td>87%</td>
+</tr>
+<tr>
+<td>2021-06-27 19:00:00 UTC</td>
+<td>21</td>
+<td>87%</td>
+</tr>
+<tr>
+<td>2021-06-27 20:00:00 UTC</td>
+<td>24</td>
+<td>100%</td>
+</tr>
+</table>
+<h2>solving teams:</h2>
+<p>solved by 24 teams</p>
+<table>
+<thead>
+<tr>
+<th>team</th>
+<th>solved at</th>
+<th>it took</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<a href='../teams/69.html'>PPP</a>
+</th>
+<td>
+2021-06-27 06:38:38 UTC
+</td>
+<td>
+2825
+seconds, or
+0.78
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/320.html'>Tea MSG</a>
+</th>
+<td>
+2021-06-27 08:03:10 UTC
+</td>
+<td>
+7878
+seconds, or
+2.19
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/393.html'>BLÅHAJ</a>
+</th>
+<td>
+2021-06-27 08:15:18 UTC
+</td>
+<td>
+7648
+seconds, or
+2.12
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/633.html'>1064CBread</a>
+</th>
+<td>
+2021-06-27 08:35:25 UTC
+</td>
+<td>
+9602
+seconds, or
+2.67
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/211.html'>WeightedCompanionCube</a>
+</th>
+<td>
+2021-06-27 08:45:03 UTC
+</td>
+<td>
+6891
+seconds, or
+1.91
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/120.html'>OneSmallHackForMan</a>
+</th>
+<td>
+2021-06-27 09:45:51 UTC
+</td>
+<td>
+10383
+seconds, or
+2.88
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/42.html'>Samurai</a>
+</th>
+<td>
+2021-06-27 10:01:55 UTC
+</td>
+<td>
+14506
+seconds, or
+4.03
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/61.html'>Poland Can Into Space</a>
+</th>
+<td>
+2021-06-27 10:07:05 UTC
+</td>
+<td>
+10049
+seconds, or
+2.79
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/214.html'>SpaceBitsRUs</a>
+</th>
+<td>
+2021-06-27 10:38:51 UTC
+</td>
+<td>
+16836
+seconds, or
+4.68
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/507.html'>FluxRepeatRocket</a>
+</th>
+<td>
+2021-06-27 12:09:51 UTC
+</td>
+<td>
+22081
+seconds, or
+6.13
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/270.html'>cbx</a>
+</th>
+<td>
+2021-06-27 12:32:59 UTC
+</td>
+<td>
+12608
+seconds, or
+3.5
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/87.html'>WeltALLES!</a>
+</th>
+<td>
+2021-06-27 13:31:22 UTC
+</td>
+<td>
+18142
+seconds, or
+5.04
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/66.html'>perfect blue</a>
+</th>
+<td>
+2021-06-27 14:29:16 UTC
+</td>
+<td>
+30741
+seconds, or
+8.54
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/38.html'>DiceGang</a>
+</th>
+<td>
+2021-06-27 15:02:02 UTC
+</td>
+<td>
+32958
+seconds, or
+9.15
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/272.html'>vMag</a>
+</th>
+<td>
+2021-06-27 15:02:28 UTC
+</td>
+<td>
+32660
+seconds, or
+9.07
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/138.html'>Solar Wine</a>
+</th>
+<td>
+2021-06-27 15:12:23 UTC
+</td>
+<td>
+33477
+seconds, or
+9.3
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/486.html'>ENOFLAG</a>
+</th>
+<td>
+2021-06-27 15:14:49 UTC
+</td>
+<td>
+25698
+seconds, or
+7.14
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/48.html'>NSL</a>
+</th>
+<td>
+2021-06-27 15:41:23 UTC
+</td>
+<td>
+35141
+seconds, or
+9.76
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/309.html'>segfault_in_our_stars</a>
+</th>
+<td>
+2021-06-27 17:04:47 UTC
+</td>
+<td>
+40354
+seconds, or
+11.21
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/43.html'>ADDVulcan</a>
+</th>
+<td>
+2021-06-27 17:19:36 UTC
+</td>
+<td>
+41051
+seconds, or
+11.4
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/95.html'>Visions_of_Grandeur</a>
+</th>
+<td>
+2021-06-27 17:49:00 UTC
+</td>
+<td>
+37881
+seconds, or
+10.52
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/311.html'>mhackeroni</a>
+</th>
+<td>
+2021-06-27 19:09:59 UTC
+</td>
+<td>
+41403
+seconds, or
+11.5
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/77.html'>SingleEventUpset</a>
+</th>
+<td>
+2021-06-27 19:22:02 UTC
+</td>
+<td>
+48550
+seconds, or
+13.49
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/52.html'>Vim Appreciation Society</a>
+</th>
+<td>
+2021-06-27 19:30:17 UTC
+</td>
+<td>
+48386
+seconds, or
+13.44
+hours
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>
